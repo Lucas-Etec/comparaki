@@ -1,0 +1,33 @@
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+#categorias li {
+    padding: 32px 28px;
+    background-color: #CCE2EA;
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: background 500ms, box-shadow 500ms;
+}
+
+#categorias li:hover {
+    background-color: #ADD8E6;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 12px;
+}
+
+#categorias li ion-icon {
+    font-size: 70px;
+}
+
+#categorias li span {
+    font-size: 15px;
+    font-weight: 700;
+}
