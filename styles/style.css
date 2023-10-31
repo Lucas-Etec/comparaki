@@ -1,4 +1,8 @@
 .navbar.bg-dark {
+    background-color: transparent !important;
+}
+
+header {
     background-color: #ADD8E6 !important;
 }
 
@@ -9,7 +13,7 @@
     border-radius: 15px;
     background: #FFF;
     padding-left: 3em;
-    margin-left: 28em;
+    border: none;
 }
 
 .bi.bi-pencil-square {
