@@ -12,4 +12,33 @@
     margin-left: 28em;
 }
 
-.bi.bi-pencil-square {}
+.bi.bi-pencil-square {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bi.bi-pencil-square:hover {
+    color: #FFF;
+    transition: 600ms;
+}
+
+.botao-lista {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    outline: none !important;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+img:hover {
+    filter: brightness(1.5);
+    transition: 700ms;
+}
+
+main {
+    padding: 30px 0;
+}
