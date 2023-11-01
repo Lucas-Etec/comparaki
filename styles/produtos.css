@@ -1,11 +1,35 @@
-#categorias {
+#produtos {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
 }
 
-#categorias li {
+.produtos {
+    margin-top: -2.4em;
+    margin-right: 15em;
+}
+
+#produtos img {
+    width: 180px;
+    height: 180px;
+}
+
+#produtos div {
+    margin-right: 2px;
+    text-wrap: nowrap;
+    margin-left: 7em;
+    position: absolute;
+    font-family: poppins, Arial;
+    font-weight: bold;
+}
+
+#produtos li {
+    line-height: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #CCE2EA;
+    border-width: 0 160px 100px 50px;
     padding: 32px 28px;
     background-color: #CCE2EA;
     box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 12px;
@@ -13,21 +37,36 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    width: 150px;
+    width: 33em;
     cursor: pointer;
     transition: background 500ms, box-shadow 500ms;
 }
 
-#categorias li:hover {
+#produtos li:hover {
     background-color: #ADD8E6;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 12px;
 }
 
-#categorias li ion-icon {
-    font-size: 70px;
+.botao-produtos {
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    margin-left: 31em;
+    margin-top: 2em;
+    background-color: #87CEEB;
+    border: none;
+    border-radius: 10px;
+    font-family: poppins, arial;
+    font-weight: bold;
 }
 
-#categorias li span {
-    font-size: 15px;
-    font-weight: 700;
+.cinza {
+    color: gray;
+}
+
+.comparacao {
+    margin-left: 33em;
+    position: absolute;
+    margin-top: 8em;
+    font-size: 14px;
 }

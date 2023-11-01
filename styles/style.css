@@ -38,7 +38,7 @@ img {
     height: 50px;
 }
 
-img:hover {
+header>img:hover {
     filter: brightness(1.5);
     transition: 700ms;
 }

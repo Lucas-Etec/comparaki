@@ -8,4 +8,5 @@ function carregarPagina(url) {
         });
 }
 
-carregarPagina('pages/categorias.html')
+// carregarPagina('pages/categorias.html')
+carregarPagina('pages/produtos.html')
