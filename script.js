@@ -9,4 +9,4 @@ function carregarPagina(url) {
 }
 
 // carregarPagina('pages/categorias.html')
-carregarPagina('pages/produtos.html')
+// carregarPagina('pages/produtos.html')
