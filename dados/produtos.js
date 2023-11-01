@@ -5,7 +5,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -14,7 +14,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -23,7 +23,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -32,7 +32,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -41,7 +41,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -50,7 +50,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -59,7 +59,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -68,7 +68,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -77,7 +77,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     },
     {
@@ -86,7 +86,7 @@ export default [
         marca: "Marca 1",
         preco: 17.90,
         estabelecimento: "Mercado A",
-        linkImagem: "./produtos/arroz.png",
+        linkImagem: "./dados/produtos/arroz.png",
         categoria: "mercado"
     }
 ]
