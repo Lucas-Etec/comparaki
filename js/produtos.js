@@ -1,8 +1,6 @@
-import produtos from "../dados/produtos.js"
-
 const listElement = document.querySelector("#produtos ul")
 
-function mostrarProdutos(produtos) {
+export function mostrarProdutos(produtos) {
     listElement.innerHTML = ""
 
     produtos.forEach(produto => {
@@ -21,5 +19,3 @@ function mostrarProdutos(produtos) {
         `
     })
 }
-
-mostrarProdutos(produtos)
