@@ -22,8 +22,8 @@ function mostrarCategorias(categorias) {
 }
 
 function trocarPagina(categoria) {
-    categoriasElement.classList.add("hide")
-    produtosElement.classList.remove("hide")
+    categoriasElement.classList.add("desativo")
+    produtosElement.classList.remove("desativo")
 
     mostrarProdutos(produtos.filter(produto => produto.categoria === categoria.toLowerCase()))
 }
