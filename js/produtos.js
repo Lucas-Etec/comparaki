@@ -1,9 +1,10 @@
-const listElement = document.querySelector("#produtos ul")
+import { mostrarComparacao } from "./comparacao.js"
+
 const produtosElement = document.querySelector("#produtos")
 const comparacaoElement = document.querySelector("#comparacao")
 
-export function mostrarProdutos(produtos) {
-    listElement.innerHTML = ""
+export function mostrarProdutos(produtos, elementoLista) {
+    elementoLista.innerHTML = ""
 
     produtos.forEach(produto => {
         const li = document.createElement("li")
@@ -20,12 +21,13 @@ export function mostrarProdutos(produtos) {
         `
         li.querySelector("button").addEventListener("click", () => trocarPagina(produtos.indexOf(produto)))
 
-        listElement.appendChild(li)
+        elementoLista.appendChild(li)
     })
 }
 
 function trocarPagina(indexProduto) {
     produtosElement.classList.add("desativo")
     comparacaoElement.classList.remove("desativo")
-    console.log(indexProduto)
+
+    mostrarComparacao(indexProduto)
 }
