@@ -1,3 +1,15 @@
+import lista from "./js/lista.js";
+
+const botaoAbrirLista = document.getElementById("botao-abrir-lista")
+const botaoFecharLista = document.getElementById("botao-fechar-lista")
+
+botaoAbrirLista.onclick = lista.abrir
+botaoFecharLista.onclick = lista.fechar
+
+
+
+
+
 function carregarPagina(url) {
     fetch(url)
         .then(response => response.text())
