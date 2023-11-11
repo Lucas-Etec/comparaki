@@ -1,5 +1,6 @@
 import produtos from "../dados/produtos.js"
 import { mostrarProdutos } from "./produtos.js"
+import lista from "./lista.js"
 
 const comparacaoElement = document.getElementById("comparacao")
 const estabelecimentoElement = document.getElementById("estabelecimento")
@@ -9,6 +10,7 @@ const comparacaoQuantidade = document.getElementById("comparacao-quantidade")
 const comparacaoMarca = document.getElementById("comparacao-marca")
 const comparacaoPreco = document.getElementById("comparacao-preco")
 const comparacaoEstabelecimento = document.getElementById("comparacao-estabelecimento")
+const botaoAdicionarProduto = document.querySelector("#comparacao #principal button.adicionar-produto")
 const listaOutrasMarcas = document.getElementById("lista-outras-marcas")
 const listaOutrosEstabelecimentos = document.getElementById("lista-outros-estabelecimentos")
 
@@ -22,6 +24,7 @@ export function mostrarComparacao(indexProduto) {
     comparacaoMarca.innerText = produto.marca
     comparacaoPreco.innerText = produto.preco
     comparacaoEstabelecimento.innerText = produto.estabelecimento
+    botaoAdicionarProduto.onclick = () => lista.adicionarProduto(indexProduto)
 
     comparacaoEstabelecimento.addEventListener("click", () => trocarPagina(produto.estabelecimento))
 
