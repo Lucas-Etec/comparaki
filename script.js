@@ -5,6 +5,7 @@ const botaoFecharLista = document.getElementById("botao-fechar-lista")
 
 botaoAbrirLista.onclick = lista.abrir
 botaoFecharLista.onclick = lista.fechar
+lista.carregarLista()
 
 
 
