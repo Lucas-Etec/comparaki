@@ -1,0 +1,54 @@
+#lista {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 36px 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    transition: right 500ms;
+}
+
+#lista.escondido {
+    right: -350px;
+}
+
+#lista #botao-fechar-lista {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: none;
+    background-color: #87CEEB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    transition: filter 500ms;
+    cursor: pointer;
+}
+
+#lista #botao-fechar-lista:hover {
+    filter: opacity(0.7);
+}
+
+#lista h2 {
+    font-size: 20px;
+    margin: 0 !important;
+    color: black;
+}
+
+#lista ul {
+    display: grid;
+    margin: 0;
+    gap: 16px;
+    overflow-y: scroll;
+}
+
+#lista ul li {
+    /* Colocar estilos para cada card */
+}
