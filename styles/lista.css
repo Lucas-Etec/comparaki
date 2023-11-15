@@ -50,5 +50,53 @@
 }
 
 #lista ul li {
-    /* Colocar estilos para cada card */
+    background-color: #CCE2EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+#lista ul li img {
+    height: auto;
+    max-height: 100px;
+    width: 78px;
+    object-fit: contain;
+}
+
+#lista ul li .informacoes {
+    flex: 1;
+}
+
+#lista ul li .informacoes h2 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+#lista ul li .informacoes p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#lista ul li .informacoes h3 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 20px;
+}
+
+#lista ul li button {
+    border-radius: 8px;
+    border: none;
+    background: #87CEEB;
+    padding: 10px;
+    cursor: pointer;
+    transition: filter 500ms;
+    font-size: 20px;
+}
+
+#lista ul li button:hover {
+    filter: opacity(0.7);
 }
