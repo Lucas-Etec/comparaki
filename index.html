@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/categorias.css">
     <link rel="stylesheet" href="styles/produtos.css">
+    <link rel="stylesheet" href="styles/comparacao.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/lista.css">
 
@@ -48,32 +49,33 @@
 tentar, testar aparecer
         </div> -->
 
-        <div id="categorias" class="container desativado">
+        <div id="categorias" class="container desativo">
             <ul></ul>
         </div>
 
         <div id="produtos" class="container desativo">
-            <ul></ul>
+            <ul class="lista-card-produtos"></ul>
         </div>
 
         <div id="comparacao" class="container desativo">
             <section id="principal">
-                <img id="comparacao-imagem" src="./dados/produtos/arroz.png" alt="arroz">
+                <img id="comparacao-imagem" src="./dados/produtos/arroz.png" alt="">
                 <div>
-                    <h2><span id="comparacao-nome"></span> | <span id="comparacao-quantidade"></span></h2>
-                    <span id="comparacao-marca"></span>
-                    <span id="comparacao-preco"></span>
-                    <p>Em: <span id="comparacao-estabelecimento"></span></p>
+                    <h2><span id="comparacao-nome">asdf asddsf</span> | <span id="comparacao-quantidade">asdsad</span>
+                    </h2>
+                    <span id="comparacao-marca">Marca 1</span>
+                    <span id="comparacao-preco">R$ 12,00</span>
+                    <p>Em: <span id="comparacao-estabelecimento">No mercado A</span></p>
                     <button class="adicionar-produto" type="button">Adicionar na lista</button>
                 </div>
             </section>
-            <section>
-                <h2>Gráfico Histórico de preços</h2>
+            <section id="historico">
+                <img src="./assets/historico.png" alt="Gráfico do histórico de preços">
             </section>
 
             <section>
                 <h2>Outras marcas
-                    <ul id="lista-outras-marcas"></ul>
+                    <ul id="lista-outras-marcas" class="lista-card-produtos"></ul>
                 </h2>
             </section>
             <section>

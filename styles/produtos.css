@@ -1,18 +1,18 @@
-#produtos ul {
+.lista-card-produtos {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
 }
 
-#produtos img {
+.lista-card-produtos img {
     margin-top: -1.4em;
     margin-right: 16em;
     width: 150px;
     height: 150px;
 }
 
-#produtos div {
+.lista-card-produtos div {
     margin-right: 2px;
     text-wrap: nowrap;
     margin-left: 7em;
@@ -22,13 +22,13 @@
     text-align: center;
 }
 
-h2 {
+#produtos h2 {
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
     margin-left: 2em !important;
 }
 
-#produtos li {
+.lista-card-produtos li {
     line-height: 0;
     height: 0;
     border-style: solid;
@@ -46,7 +46,7 @@ h2 {
     transition: background 500ms, box-shadow 500ms;
 }
 
-#produtos li:hover {
+.lista-card-produtos li:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 12px;
 }
 

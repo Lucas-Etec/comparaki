@@ -60,7 +60,7 @@ function criaElementoOutroEstabelecimento(estabelecimento) {
 
     li.innerHTML = `
         <span class="nome-estabelecimento">Mercado X</span>
-        <span>R$ 12,99</span>
+        <span class="preco">R$ 12,99</span>
         <button type="button">Adicionar na lista</button>
     `
 

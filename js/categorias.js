@@ -20,6 +20,7 @@ function mostrarCategorias(categorias) {
         li.addEventListener("click", () => trocarPagina(categoria.nome))
         elementoLista.appendChild(li)
     })
+    categoriasElement.classList.remove("desativo")
 }
 
 function trocarPagina(categoria) {

@@ -1,0 +1,121 @@
+#comparacao {
+    display: grid;
+    gap: 55px;
+}
+
+#comparacao.desativo {
+    display: none;
+}
+
+#comparacao section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#comparacao ul {
+    margin: 0;
+}
+
+#comparacao section#principal {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#comparacao section#principal #comparacao-imagem {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+
+#comparacao section#principal div {
+    flex: 1;
+    display: grid;
+    gap: 2px;
+}
+
+#comparacao section#principal div h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#comparacao section#principal div #comparacao-preco {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#comparacao section#principal div p {
+    font-weight: 700;
+    margin: 0;
+}
+
+#comparacao section#principal div p span {
+    font-weight: 400;
+}
+
+#comparacao section#principal div button {
+    font-weight: 700;
+    background-color: #87CEEB;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 7px;
+    width: 100%;
+    border: none;
+    transition: filter 500ms;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+#comparacao section#principal div button:hover {
+    filter: opacity(0.7);
+}
+
+#comparacao section#historico img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#comparacao section #lista-outros-estabelecimentos {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    width: 80vw;
+
+}
+
+#comparacao section #lista-outros-estabelecimentos li {
+    font-weight: 700;
+    background-color: #CCE2EA;
+    display: grid;
+    width: 120px;
+    gap: 2px;
+    padding: 12px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#comparacao section #lista-outros-estabelecimentos li .preco {
+    font-size: 20px;
+}
+
+#comparacao section #lista-outros-estabelecimentos li button {
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #87CEEB;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: filter 500ms;
+    cursor: pointer;
+}
+
+#comparacao section #lista-outros-estabelecimentos li button:hover {
+    filter: opacity(0.7);
+}

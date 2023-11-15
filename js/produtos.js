@@ -12,13 +12,14 @@ export function mostrarProdutos(produtos, elementoLista) {
             <img class="produtos" src="${produto.linkImagem}">
             <div>
                 <h2>${produto.nome} | ${produto.quantidade}</h2>
-                <pclass="cinza">${produto.marca}</p>
+                <p class="cinza">${produto.marca}</p>
                 <p>Melhor Preço:${produto.estabelecimento}<p>
                         <h3>R$: ${produto.preco}</h3>
             </div>
             <button class="botao-produtos">Ver comparação</button>
             <p class="cinza comparacao">Comparar entre 3 lojas</p>
         `
+        li.classList.add("card-produto")
         li.querySelector("button").addEventListener("click", () => trocarPagina(produtos.indexOf(produto)))
 
         elementoLista.appendChild(li)
