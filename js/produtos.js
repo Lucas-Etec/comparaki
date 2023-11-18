@@ -6,6 +6,8 @@ const comparacaoElement = document.querySelector("#comparacao")
 export function mostrarProdutos(produtos, elementoLista) {
     elementoLista.innerHTML = ""
 
+    produtos = filtraPorMelhorPreço(produtos)
+
     produtos.forEach(produto => {
         const li = document.createElement("li")
         li.innerHTML = `
@@ -24,6 +26,21 @@ export function mostrarProdutos(produtos, elementoLista) {
 
         elementoLista.appendChild(li)
     })
+}
+
+function filtraPorMelhorPreço(produtos) {
+    let nomesDosProdutos = produtos.map(produto => produto.nome)
+    nomesDosProdutos = new Set(nomesDosProdutos)
+    let produtosComMelhoresPrecos = []
+
+    nomesDosProdutos.forEach(nome => {
+        // Agrupa os produtos que tem o mesmo nome
+        const produtosComMesmoNome = produtos.filter(produto => produto.nome === nome)
+        const produtoMaisBarato = produtosComMesmoNome.sort((a, b) => a.preco > b.preco)[0]
+        produtosComMelhoresPrecos.push(produtoMaisBarato)
+    })
+
+    return produtosComMelhoresPrecos
 }
 
 function trocarPagina(indexProduto) {

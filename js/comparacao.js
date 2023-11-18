@@ -41,6 +41,7 @@ function pegaProdutoDeOutrasMarcas(nomeProduto) {
     let listaDeProdutos = []
 
     // falta terminar essa função 
+    // criar função que pega o menor preço de uma lista de produtos
 
     return listaDeProdutos
 }
