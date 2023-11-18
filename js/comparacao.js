@@ -28,7 +28,7 @@ export function mostrarComparacao(indexProduto) {
 
     comparacaoEstabelecimento.addEventListener("click", () => trocarPagina(produto.estabelecimento))
 
-    mostrarProdutos(pegaProdutoDeOutrasMarcas(produto.nome), listaOutrasMarcas)
+    mostrarProdutos(pegaProdutoDeOutrasMarcas(produto.nome, produto.marca, produtos), listaOutrasMarcas)
 
     listaOutrosEstabelecimentos.innerHTML = ""
     pegaOutrosEstabelecimentos(indexProduto, produto.nome, produto.marca).forEach(estabelecimento => {
@@ -37,11 +37,8 @@ export function mostrarComparacao(indexProduto) {
     })
 }
 
-function pegaProdutoDeOutrasMarcas(nomeProduto) {
-    let listaDeProdutos = []
-
-    // falta terminar essa função 
-    // criar função que pega o menor preço de uma lista de produtos
+function pegaProdutoDeOutrasMarcas(nomeProduto, marcaProduto, produtos) {
+    let listaDeProdutos = produtos.filter(produto => produto.nome === nomeProduto && produto.marca !== marcaProduto).sort((a, b) => a.preco > b.preco)
 
     return listaDeProdutos
 }

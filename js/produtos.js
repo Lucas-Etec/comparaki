@@ -46,6 +46,6 @@ function filtraPorMelhorPreço(produtos) {
 function trocarPagina(indexProduto) {
     produtosElement.classList.add("desativo")
     comparacaoElement.classList.remove("desativo")
-
+console.log(123)
     mostrarComparacao(indexProduto)
 }
