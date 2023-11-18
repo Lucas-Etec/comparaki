@@ -9,6 +9,42 @@ export default [
         categoria: "mercado"
     },
     {
+        nome: "Arroz",
+        quantidade: "5 Kg",
+        marca: "Marca 2",
+        preco: 17.90,
+        estabelecimento: "Mercado A",
+        linkImagem: "./dados/produtos/arroz.png",
+        categoria: "mercado"
+    },
+    {
+        nome: "Arroz",
+        quantidade: "5 Kg",
+        marca: "Marca 3",
+        preco: 17.90,
+        estabelecimento: "Mercado A",
+        linkImagem: "./dados/produtos/arroz.png",
+        categoria: "mercado"
+    },
+    {
+        nome: "Arroz",
+        quantidade: "5 Kg",
+        marca: "Marca 1",
+        preco: 17.90,
+        estabelecimento: "Mercado B",
+        linkImagem: "./dados/produtos/arroz.png",
+        categoria: "mercado"
+    },
+    {
+        nome: "Arroz",
+        quantidade: "5 Kg",
+        marca: "Marca 1",
+        preco: 17.90,
+        estabelecimento: "Mercado C",
+        linkImagem: "./dados/produtos/arroz.png",
+        categoria: "mercado"
+    },
+    {
         nome: "Feijão",
         quantidade: "1 Kg",
         marca: "Marca 1",
