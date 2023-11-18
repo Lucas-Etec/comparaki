@@ -31,7 +31,7 @@ export function mostrarComparacao(indexProduto) {
     mostrarProdutos(pegaProdutoDeOutrasMarcas(produto.nome), listaOutrasMarcas)
 
     listaOutrosEstabelecimentos.innerHTML = ""
-    pegaOutrosEstabelecimentos(produto.nome).forEach(estabelecimento => {
+    pegaOutrosEstabelecimentos(indexProduto, produto.nome, produto.marca).forEach(estabelecimento => {
         listaOutrosEstabelecimentos
             .appendChild(criaElementoOutroEstabelecimento(estabelecimento))
     })
@@ -45,11 +45,10 @@ function pegaProdutoDeOutrasMarcas(nomeProduto) {
     return listaDeProdutos
 }
 
-function pegaOutrosEstabelecimentos(nomeProduto) {
-    let listaDeProdutos = ["", ""]
-
-    // falta terminar essa função 
-
+function pegaOutrosEstabelecimentos(indexProduto, nomeProduto, marcaProduto) {
+    // Filtra os os produtos por aqueles que tem o mesmo nome e marca
+    // E remove o produto que já esta sendo mostrado
+    let listaDeProdutos = produtos.filter(produto => produtos.indexOf(produto) !== indexProduto && produto.nome === nomeProduto && produto.marca === marcaProduto)
     return listaDeProdutos
 }
 
