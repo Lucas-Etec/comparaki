@@ -1,6 +1,6 @@
 import categorias from "../dados/categorias.js"
 import produtos from "../dados/produtos.js"
-import { mostrarProdutos } from "./produtos.js"
+import { mostrarProdutos, filtraPorMelhorPreço } from "./produtos.js"
 
 const elementoLista = document.querySelector("#categorias ul")
 const categoriasElement = document.querySelector("#categorias")
@@ -27,7 +27,10 @@ function trocarPagina(categoria) {
     categoriasElement.classList.add("desativo")
     produtosElement.classList.remove("desativo")
 
-    mostrarProdutos(produtos.filter(produto => produto.categoria === categoria.toLowerCase()), elementoListaProdutos)
+    const produtosFiltradosPorCategoria = produtos.filter(produto => produto.categoria === categoria.toLowerCase())
+    const produtosParaMostrar = filtraPorMelhorPreço(produtosFiltradosPorCategoria)
+
+    mostrarProdutos(produtosParaMostrar, elementoListaProdutos)
 }
 
 mostrarCategorias(categorias)

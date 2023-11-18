@@ -6,8 +6,6 @@ const comparacaoElement = document.querySelector("#comparacao")
 export function mostrarProdutos(produtos, elementoLista) {
     elementoLista.innerHTML = ""
 
-    produtos = filtraPorMelhorPreço(produtos)
-
     produtos.forEach(produto => {
         const li = document.createElement("li")
         li.innerHTML = `
@@ -28,7 +26,7 @@ export function mostrarProdutos(produtos, elementoLista) {
     })
 }
 
-function filtraPorMelhorPreço(produtos) {
+export function filtraPorMelhorPreço(produtos) {
     let nomesDosProdutos = produtos.map(produto => produto.nome)
     nomesDosProdutos = new Set(nomesDosProdutos)
     let produtosComMelhoresPrecos = []
@@ -46,6 +44,5 @@ function filtraPorMelhorPreço(produtos) {
 function trocarPagina(indexProduto) {
     produtosElement.classList.add("desativo")
     comparacaoElement.classList.remove("desativo")
-console.log(123)
     mostrarComparacao(indexProduto)
 }
