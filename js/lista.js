@@ -38,6 +38,8 @@ const funcoes = {
                     <i class="bi bi-trash"></i>
                 </button>
             `
+
+            li.querySelector("button").addEventListener("click", () => this.removerProduto(index))
             listaUl.appendChild(li)
         });
 
