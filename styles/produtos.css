@@ -8,6 +8,7 @@
 .lista-card-produtos img {
     margin-top: -1.4em;
     margin-right: 16em;
+    object-fit: contain;
     width: 150px;
     height: 150px;
 }
