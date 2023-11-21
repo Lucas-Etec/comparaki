@@ -46,7 +46,7 @@
     display: grid;
     margin: 0;
     gap: 16px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #lista ul li {
