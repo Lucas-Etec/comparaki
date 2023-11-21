@@ -57,7 +57,8 @@
 
 #comparacao section#principal div button {
     font-weight: 700;
-    background-color: #87CEEB;
+    color: white;
+    background-color: var(--dark-color);
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 7px;
@@ -89,7 +90,7 @@
 
 #comparacao section #lista-outros-estabelecimentos li {
     font-weight: 700;
-    background-color: #CCE2EA;
+    background-color: var(--light-color);
     display: grid;
     width: 120px;
     gap: 2px;
@@ -109,7 +110,7 @@
     font-weight: 700;
     border-radius: 8px;
     padding: 8px;
-    background-color: #87CEEB;
+    background-color: var(--dark-color);
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: filter 500ms;

@@ -7,7 +7,7 @@
 
 #categorias li {
     padding: 32px 28px;
-    background-color: #CCE2EA;
+    background-color: var(--light-color);
     box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 12px;
     display: flex;
     flex-direction: column;
@@ -19,8 +19,9 @@
 }
 
 #categorias li:hover {
-    background-color: #ADD8E6;
+    background-color: var(--dark-color);
     box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 12px;
+    color: white;
 }
 
 #categorias li ion-icon {

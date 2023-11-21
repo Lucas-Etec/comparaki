@@ -3,11 +3,12 @@ header .navbar.bg-dark {
 }
 
 header {
-    background-color: #ADD8E6 !important;
+    background-color: var(--dark-color) !important;
+    color: white;
 }
 
 header .container nav .logo-a {
-    color: black;
+    color: white;
     transition: 300ms;
     display: flex;
     align-items: center;
@@ -44,13 +45,14 @@ header .botao-lista {
 }
 
 header .bi.bi-pencil-square {
+    color: white;
     font-size: 25px;
     cursor: pointer;
+    transition: filter 300ms;
 }
 
 header .bi.bi-pencil-square:hover {
-    color: #FFF;
-    transition: 600ms;
+    filter: opacity(0.7);
 }
 
 
@@ -77,8 +79,9 @@ main .container.desativo {
 }
 
 footer {
-    background-color: #ADD8E6;
+    background-color: var(--dark-color);
     padding: 40px;
+    color: white;
 }
 
 footer .container {

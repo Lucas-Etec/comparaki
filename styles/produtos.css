@@ -32,10 +32,10 @@
     line-height: 0;
     height: 0;
     border-style: solid;
-    border-color: #CCE2EA;
+    border-color: var(--light-color);
     border-width: 0 160px 100px 50px;
     padding: 32px 28px;
-    background-color: #CCE2EA;
+    background-color: var(--light-color);
     box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 12px;
     display: flex;
     flex-direction: column;
@@ -51,12 +51,13 @@
 }
 
 .botao-produtos {
+    color: white;
     position: absolute;
     width: 130px;
     height: 70px;
     margin-left: 31em;
     margin-top: 2em;
-    background-color: #87CEEB;
+    background-color: var(--dark-color);
     border: none;
     border-radius: 10px;
     font-family: poppins, arial;
@@ -64,7 +65,7 @@
 }
 
 .cinza {
-    color: #808080;
+    color: #5d5d5d;
 }
 
 .comparacao {
