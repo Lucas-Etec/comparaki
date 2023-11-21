@@ -107,6 +107,7 @@
 }
 
 #comparacao section #lista-outros-estabelecimentos li button {
+    color: white;
     font-weight: 700;
     border-radius: 8px;
     padding: 8px;
