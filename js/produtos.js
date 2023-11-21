@@ -1,4 +1,5 @@
 import { mostrarComparacao } from "./comparacao.js"
+import todosProdutos from "../dados/produtos.js"
 
 const produtosElement = document.querySelector("#produtos")
 const comparacaoElement = document.querySelector("#comparacao")
@@ -20,7 +21,7 @@ export function mostrarProdutos(produtos, elementoLista) {
             <p class="cinza comparacao">Comparar entre 3 lojas</p>
         `
         li.classList.add("card-produto")
-        li.querySelector("button").addEventListener("click", () => trocarPagina(produtos.indexOf(produto)))
+        li.querySelector("button").addEventListener("click", () => trocarPagina(todosProdutos.indexOf(produto)))
 
         elementoLista.appendChild(li)
     })
