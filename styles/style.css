@@ -1,4 +1,4 @@
-.navbar.bg-dark {
+header .navbar.bg-dark {
     background-color: transparent !important;
 }
 
@@ -6,7 +6,27 @@ header {
     background-color: #ADD8E6 !important;
 }
 
-.form-control.pesquisar {
+header .container nav .logo-a {
+    color: black;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+header .container nav .logo-a:hover {
+    filter: opacity(0.7);
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header .form-control.pesquisar {
     width: 160px !important;
     height: 32px;
     flex-shrink: 0;
@@ -16,31 +36,36 @@ header {
     border: none;
 }
 
-.bi.bi-pencil-square {
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.bi.bi-pencil-square:hover {
-    color: #FFF;
-    transition: 600ms;
-}
-
-.botao-lista {
+header .botao-lista {
     border: none;
     box-shadow: none;
     background-color: transparent;
     outline: none !important;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+header .bi.bi-pencil-square {
+    font-size: 25px;
+    cursor: pointer;
 }
 
-header>img:hover {
-    filter: brightness(1.5);
-    transition: 700ms;
+header .bi.bi-pencil-square:hover {
+    color: #FFF;
+    transition: 600ms;
+}
+
+
+header .container .escolha-cidade {
+    margin: 0;
+}
+
+header .container .escolha-cidade strong {
+    text-decoration: underline;
+    transition: filter 300ms;
+    cursor: pointer;
+}
+
+header .container .escolha-cidade strong:hover {
+    filter: opacity(0.7);
 }
 
 main {
