@@ -75,3 +75,25 @@ main {
 main .container.desativo {
     display: none;
 }
+
+footer {
+    background-color: #ADD8E6;
+    padding: 40px;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .container h2,
+footer .container p {
+    margin: 0;
+}
+
+footer .container .contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 0;
+}
