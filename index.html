@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/categorias.css">
     <link rel="stylesheet" href="styles/produtos.css">
     <link rel="stylesheet" href="styles/comparacao.css">
+    <link rel="stylesheet" href="styles/estabelecimento.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/lista.css">
 
@@ -39,7 +40,8 @@
                 <form class="form-inline">
                     <input class="form-control pesquisar" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                 </form>
-                <button id="botao-abrir-lista" class="botao-lista"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" title="Lista de produtos" id="botao-abrir-lista" class="botao-lista"><i
+                        class="bi bi-pencil-square"></i></button>
             </nav>
         </div>
     </header>
@@ -85,13 +87,13 @@ tentar, testar aparecer
         </div>
 
         <div id="estabelecimento" class="container desativo">
-            <section>
+            <section class="principal">
                 <div class="esquerda">
                     <img id="estabelecimento-imagem" src="./assets/logo.png" alt="Logo do estabelecimento">
                     <h2 id="estabelecimento-nome">Mercado D</h2>
                 </div>
                 <div class="direita">
-                    <span id="estabelecimento-endereço">Rua Abc, 123</span>
+                    <span id="estabelecimento-endereco">Rua Abc, 123</span>
                     <div class="contato">
                         <h3>Contato</h3>
                         <ul id="estabelecimento-contatos">
