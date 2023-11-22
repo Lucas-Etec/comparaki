@@ -13,8 +13,8 @@ function salvarLista(lista) {
 }
 
 const funcoes = {
-    abrir: () => {
-        lista.classList.remove("escondido")
+    toggle: () => {
+        lista.classList.toggle("escondido")
     },
     fechar: () => {
         lista.classList.add("escondido")

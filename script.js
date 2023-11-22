@@ -3,7 +3,7 @@ import lista from "./js/lista.js";
 const botaoAbrirLista = document.getElementById("botao-abrir-lista")
 const botaoFecharLista = document.getElementById("botao-fechar-lista")
 
-botaoAbrirLista.onclick = lista.abrir
+botaoAbrirLista.onclick = lista.toggle
 botaoFecharLista.onclick = lista.fechar
 lista.carregarLista()
 
