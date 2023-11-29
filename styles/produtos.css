@@ -65,6 +65,14 @@
     font-weight: bold;
 }
 
+#comparacao .botao-produtos{
+    width: 190px;
+    text-wrap: nowrap;
+    margin-top: 1.5em;
+    margin-left: 30.2em;
+
+}
+
 .cinza {
     color: #5d5d5d;
 }
@@ -74,4 +82,5 @@
     position: absolute;
     margin-top: 8em;
     font-size: 14px;
+    text-wrap: nowrap;
 }

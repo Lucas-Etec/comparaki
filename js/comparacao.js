@@ -22,7 +22,7 @@ export function mostrarComparacao(indexProduto) {
     comparacaoNome.innerText = produto.nome
     comparacaoQuantidade.innerText = produto.quantidade
     comparacaoMarca.innerText = produto.marca
-    comparacaoPreco.innerText = produto.preco
+    comparacaoPreco.innerText = produto.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     comparacaoEstabelecimento.innerText = produto.estabelecimento
     botaoAdicionarProduto.onclick = () => lista.adicionarProduto(indexProduto)
 

@@ -1,5 +1,4 @@
-export default [
-    {
+export default [{
         nome: "Mercado",
         tagIcone: "<ion-icon name='cart-outline'></ion-icon>"
     },
@@ -30,13 +29,5 @@ export default [
     {
         nome: "Lanchonete",
         tagIcone: "<ion-icon name='fast-food-outline'></ion-icon>"
-    },
-    {
-        nome: "Mercado",
-        tagIcone: "<ion-icon name='cart-outline'></ion-icon>"
-    },
-    {
-        nome: "Mercado",
-        tagIcone: "<ion-icon name='cart-outline'></ion-icon>"
     },
 ]

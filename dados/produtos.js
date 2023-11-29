@@ -75,7 +75,7 @@ export default [
         nome: "Detergente",
         quantidade: "500 Ml",
         marca: "Marca 1",
-        preco: 404,
+        preco: 3.50,
         estabelecimento: "Mercado A",
         linkImagem: "./dados/produtos/detergente.png",
         categoria: "mercado"
